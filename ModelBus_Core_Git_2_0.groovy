@@ -1,4 +1,4 @@
-job(ModelBus-Core-Git-2.0) {
+job('ModelBus-Core-Git-2.0') {
     description 'ModelBus Core Build.'
     scm {
         git {
