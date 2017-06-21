@@ -18,13 +18,13 @@ job('ModelBusExplorer-DiffMerge-Git-2.0') {
         maven {
             mavenInstallation("Maven")
             goals("clean package")
-            properties(skipTest: true, (platform-version-name):neon)
+            properties(skipTest: true)
             rootPOM("TychoBuild/modelbus/build/org.modelbus.build.thirdparty.master/pom.xml")
         }
         maven {
             mavenInstallation("Maven")
             goals("clean package")
-            properties(skipTest: true, (platform-version-name):neon)
+            properties(skipTest: true)
             rootPOM("TychoBuild/modelbus/build/org.modelbus.build.server.master/pom.xml")
         }
                  
