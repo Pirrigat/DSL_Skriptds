@@ -1,11 +1,12 @@
 job('ModelBus-Core-Git-2.0') {
+    customWorkspace('ModelBus-Core-2.0-Seed/TychoBuild/')
     description 'ModelBus Core Build.'
     steps {
         maven {
             mavenInstallation("Maven")
             goals("clean package")
             properties(skipTest: true)
-            rootPOM("TychoBuild/build/org.modelbus.build.core.master/pom.xml")
+            rootPOM("/TychoBuild/build/org.modelbus.build.core.master/pom.xml")
         }
                
         ant {
