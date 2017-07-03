@@ -6,12 +6,12 @@ job('ModelBus-Core-Git-2.0') {
             mavenInstallation("Maven")
             goals("clean package")
             properties(skipTest: true)
-            rootPOM("/TychoBuild/build/org.modelbus.build.core.master/pom.xml")
+            rootPOM("/build/org.modelbus.build.core.master/pom.xml")
         }
                
         ant {
             antInstallation("Ant")
-            buildFile("TychoBuild/build/org.modelbus.build.core.master/javadoc.xml")
+            buildFile("/build/org.modelbus.build.core.master/javadoc.xml")
             target("UpdateSiteJavaDoc")
         }    
     }
