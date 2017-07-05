@@ -1,6 +1,6 @@
 job('ModelBus-Manager-Git-2.0') {
     description 'ModelBus Manger Build.'
-    customWorkspace('workspace/ModelBus-Core-2.0-Seed/TychoBuild/')
+    customWorkspace('workspace/ModelBus-Core-2.0-Seed/')
     steps {
         maven {
             mavenInstallation("Maven")
