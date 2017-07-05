@@ -6,7 +6,7 @@ job('ModelBus-Manager-Git-2.0') {
             mavenInstallation("Maven")
             goals("clean package")
             properties(skipTest: true)
-            rootPOM("modelbus/build/org.modelbus.manager.build.master/pom.xml")
+            rootPOM("TychoBulid/modelbus/build/org.modelbus.manager.build.master/pom.xml")
         }
                  
     }
