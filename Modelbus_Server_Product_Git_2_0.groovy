@@ -13,7 +13,7 @@ job('Modelbus-Server-Product-Git-2.0') {
     }
     publishers {
 	    artifactArchiver {
-		artifacts("TychoBuild\modelbus\build\org.modelbus.build.server.product\target\products\org.modelbus.server.product\*.zip")
+		artifacts("modelbus\build\org.modelbus.build.server.product\target\products\org.modelbus.server.product\*.zip")
 
         }
     }
