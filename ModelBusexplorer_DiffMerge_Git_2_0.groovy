@@ -6,7 +6,7 @@ job('ModelBusExplorer-DiffMerge-Git-2.0') {
             mavenInstallation("Maven")
             goals("clean package pmd:pmd checkstyle:checkstyle")
             properties(skipTest: true)
-		rootPOM("ModelBusExplorer/trunk/org.modelbus.tools.modelbusexplorer.build.master/pom.xml")
+		rootPOM("TychoBuild/ModelBusExplorer/trunk/org.modelbus.tools.modelbusexplorer.build.master/pom.xml")
         }
                  
     }
