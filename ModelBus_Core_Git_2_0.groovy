@@ -1,17 +1,17 @@
 job('ModelBus-Core-Git-2.0') {
-    customWorkspace('ModelBus-Core-2.0-Seed/TychoBuild/')
+    customWorkspace('workspace/ModelBus-Core-2.0-Seed/TychoBuild/')
     description 'ModelBus Core Build.'
     steps {
         maven {
             mavenInstallation("Maven")
             goals("clean package")
             properties(skipTest: true)
-            rootPOM("/build/org.modelbus.build.core.master/pom.xml")
+            rootPOM("modelbus/build/org.modelbus.build.core.master/pom.xml")
         }
                
         ant {
             antInstallation("Ant")
-            buildFile("/build/org.modelbus.build.core.master/javadoc.xml")
+            buildFile("modelbus/build/org.modelbus.build.core.master/javadoc.xml")
             target("UpdateSiteJavaDoc")
         }    
     }
