@@ -20,7 +20,7 @@ job('ModelBus-Core-Git-2.0') {
     		serverUrl("http://10.147.66.165:8080")
     		channel("Test.modelbus.modelbus.core.git.2.0")
     		deployKey("5c9a6cb4bfd9a006cd1987d90476f39df904a9c40fe1cc533d4416bab51ba048")
-    		artifacts("p2repositories/org.modelbus.build.core/target/*.zip")
+    		artifacts("modelbus/p2repositories/org.modelbus.build.core/target/*.zip")
 		failsAsUpload(true)
 
         }
