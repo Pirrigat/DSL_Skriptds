@@ -1,5 +1,6 @@
 job('ModelBus-TeamProvider-UpdateSite-Git-2.0') {
     description 'ModelBus TeamProvider-UpdateSite Build.'
+    customWorkspace('workspace/ModelBus-Core-2.0-Seed/TychoBuild/')
     steps {
         maven {
             mavenInstallation("Maven")
