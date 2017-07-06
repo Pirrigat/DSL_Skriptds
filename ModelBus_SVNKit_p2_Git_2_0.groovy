@@ -8,5 +8,5 @@ job('ModelBus-SVNKit-p2-Git-2.0') {
             properties(skipTest: true)
             rootPOM("TychoBuild/p2repositories/org.modelbus.svnkit.p2wrapper/pom.xml")
         }
-
+    }
 }
